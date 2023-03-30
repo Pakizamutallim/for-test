@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%; 
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-size{
+    width: 100%;
+    padding: 10px;
+    margin: 13px;
+    /* border: 1 solid rgb(55, 9, 119); */
+    border-radius: 20px; 
+}
+
+.btn {
+    width: 140px; 
+}
+
+.forms{
+    background-color: darkcyan;
+    margin: 15% auto;
+    padding: 6%;
+    /* width: 50px; */
+    border: solid rgb(1, 94, 94);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+} 
+
+.forms::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(201, 9, 9);
+    position: absolute;
+    top: -50px;
+    right: 20%;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(3px);
+    animation-name: ani;
+    animation: 4s;
+} 
+@keyframes ani {
+    0% {
+        top: -50px;
+        transform: rotate(0deg); 
+    }
+    25% {
+        top: 250px;
+        right: 199px;
+    }
+    50%{
+        top: 250px;
+        right: 500px;
+    }
+    75%{
+        top: -50px;
+        right: 500px;
+    }
+    100%{
+        right: px;
+    }
+}
