@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 40px;
+    height: 40px;
+    animation-name: css;
+    position: relative;
+    background-color: green;
+    animation-duration: 4s;
+    top: 40px;
+}
+@keyframes css{
+    0%{background-color: green; top: 40px; left: 0;
+         transform: rotate(0deg);}
+    25%{background-color: blue; top: 40px; left: 0;
+        transform: rotate(20deg);}
+    50%{background-color: blue; top: 40px; left: 500px;
+        transform: rotate(360deg)
